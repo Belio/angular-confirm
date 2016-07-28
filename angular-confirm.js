@@ -19,7 +19,7 @@ angular.module('angular-confirm', ['ui.bootstrap.modal'])
     $scope.data = angular.copy(data);
 
     $scope.ok = function (data) {
-      $uibModalInstance.close(data);
+      $uibModalInstance.close($scope.data);
     };
 
     $scope.cancel = function (dismissMessage) {
